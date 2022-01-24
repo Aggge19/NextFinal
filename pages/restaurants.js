@@ -1,10 +1,16 @@
-import Navigation from "../components/navigation"
+import Head from "next/head"
+import Container from "../components/Container"
 
 export default function Restaurants() {
-  return (  
-    <div>
-        <Navigation/>
-        <h1>Restaurants</h1>
-    </div>
-  )
+    return ( 
+        <div>
+            <Head>
+                <title>Malaga - Restaurants</title>
+            </Head>
+            <Container>
+                <h1>Restaurants</h1>
+            </Container>
+        </div>
+    )
 }
+
