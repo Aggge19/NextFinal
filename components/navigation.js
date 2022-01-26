@@ -27,6 +27,11 @@ export default function navigation() {
                             <a className="nav-link">Reviews</a>
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link href="/users">
+                            <a className="nav-link">users</a>
+                        </Link>
+                    </li>
                 </ul>
             </div>
             </div>
