@@ -1,8 +1,7 @@
 import Head from "next/head"
 import Container from "../components/Container"
 
-export default function Index(props) {
-    console.log(props);
+export default function Index() {
     return ( 
         <Container>
             <Head>
@@ -12,5 +11,3 @@ export default function Index(props) {
         </Container>
     );
 };
-
-//min 40 a revisar

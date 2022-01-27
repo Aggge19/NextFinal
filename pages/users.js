@@ -3,21 +3,22 @@ import Container from "../components/Container"
 import Users from "../components/Users"
 
 
-export default function Prueba() {
-    return ( 
-        <div>
+export default function Usuarios(props) {
+    console.log(props);
+    return (
+        <Container>
             <Head>
-                <title>Malaga - Prueba</title>
+                <title>Malaga - Usuarios</title>
             </Head>
-            <Container>
-                <h1>Prueba</h1>
-            </Container>
+
+            <h1>Usuarios</h1>
+
             <Users users={props.users}/>
-        </div>
+        </Container>
     )
 }
 
-Prueba.getInitialProps = async (ctx) =>{
+Usuarios.getInitialProps = async (ctx) =>{
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await res.json();
     console.log(data);

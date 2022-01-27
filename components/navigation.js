@@ -29,7 +29,7 @@ export default function navigation() {
                     </li>
                     <li className="nav-item">
                         <Link href="/users">
-                            <a className="nav-link">users</a>
+                            <a className="nav-link">Users</a>
                         </Link>
                     </li>
                 </ul>
