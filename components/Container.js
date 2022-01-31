@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Navigation from "./navigation"
+import Navigation from "./Navigation"
 
 export default function Container(props) {
     return (  
