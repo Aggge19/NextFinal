@@ -4,7 +4,6 @@ import Users from "../components/Users"
 
 
 export default function Usuarios(props) {
-    console.log(props);
     return (
         <Container>
             <Head>
@@ -21,6 +20,5 @@ export default function Usuarios(props) {
 Usuarios.getInitialProps = async (ctx) =>{
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     const data = await res.json();
-    console.log(data);
     return{users: data}
 }
